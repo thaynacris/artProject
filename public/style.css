@@ -1,0 +1,144 @@
+/*criar clase das duas fontes para depois aplicar*/
+
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.header {
+    background: #fff;
+    width: 100%;
+}
+
+.logo {
+    text-transform: uppercase;
+    background-color: #7f3e21;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: #ffb48a;
+    font-weight: bold;
+    float: left;
+}
+
+.header__btn {}
+
+.header__nav {
+    clear: left;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    list-style-type: none;
+    background: #642919;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+.header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #9d5732;
+    display: block;
+    padding: 25px 0;
+    transition: 0.4s ease;
+}
+
+.header__nav a:hover {
+    color: #ffb48a;
+}
+
+.hero {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+                linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+                url(../assets/images/noiteestrelada.png);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero__title {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #001f3f;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 5px 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.hero__text {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #001f3f;
+    padding: 2px 2px;
+    display: inline-block;
+    margin: 5px auto 35px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.museum-cards {
+    margin-top: 2.5em;
+}
+
+.museum-cards__card {}
+
+.museum-cards__card:hover {
+    outline: 3px solid #4a1410;
+    outline-offset: -3px;
+}
+
+.museum-cards__card:hover .museum-cards__title, 
+.museum-cards__card:hover .museum-cards__text {
+    color: #320000;
+}
+
+.museum-cards__img {
+    width: 100%;
+}
+
+.museum-cards__icon {
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+}
+
+.museum-cards__content {
+    padding: 40px 25px 10px;
+    text-align: center;
+    border-left: 1px solid #642919;
+}
+
+.museum-cards__title {
+    font-size: 21px;
+    color: #320000;
+}
+
+.museum-cards__text {
+    font-size: 14px;
+    color: #642919;
+}
+

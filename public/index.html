@@ -13,14 +13,14 @@
         <link rel="stylesheet" href="/public/style.css"> 
     </head>
   
-    <body>
+    <body class="no-js">
         
-        <header>
-          <a href="index.html">Projeto Arte</a>
+        <header class="header">
+          <a href="index.html" class="logo">Projeto Arte</a>
           
-          <button>Menu</button>
+          <button style="display: none;" class="header__btn">Menu</button>
           
-          <nav>
+          <nav class="header__nav">
             <ul>
               <li><a href="#">Leonardo da Vinci</a></li>
               <li><a href="#">Michelangelo</a></li>
@@ -33,72 +33,65 @@
           </nav>
         </header>
         
-        <section>            
-          <h1>
+        <section class="hero">            
+          <h1 class="hero__title">
             Galeria de Arte: Mestres da Pintura
           </h1>
-          <p>Este projeto é uma homenagem à arte e aos seus grandes mestres.</p>                      
+          <p class="hero__text">Este projeto é uma homenagem à arte e aos seus grandes mestres.</p>                      
         </section>
-
-        <section>
-          <article>               
+         
+        <div class="container">
+         <section class="museum-cards">
+          <article class="museum-cards__card">               
+            <img src="/assets/images/bannermonalisa.jpg" alt="Carousel Img" class="museum-cards__img">
             
-            <img src="/assets/images/monalisa.png" alt="Carousel Img">
-            
-            <div>
-              <img src="/assets/images/louvre.png" alt="Carousel Img">
+            <div class="museum-cards__icon">
+              <img src="/assets/images/louvreicon.png" alt="Carousel Img">
             </div>
-            <div>
-              <h2>Museu do Louvre</h2>
-              <p>Inaugurado no final do século XVIII, é o museu mais importante da França e um dos mais visitados do mundo. A coleção do Louvre compreende cerca de 300.000 obras anteriores a 1948, das quais são expostas aproximadamente 35.000.</p>
+            <div class="museum-cards__content">
+              <h2 class="museum-cards__title">Museu do Louvre</h2>
+              <p class="museum-cards__text">Inaugurado no final do século XVIII, é o museu mais importante da França e um dos mais visitados do mundo. A coleção do Louvre compreende cerca de 300.000 obras anteriores a 1948, das quais são expostas aproximadamente 35.000.</p>
             </div>
-
           </article>   
           
-          <article>               
+          <article class="museum-cards__card">               
+            <img src="/assets/images/bannerosgirassois.jpg" alt="Carousel Img" class="museum-cards__img">
             
-            <img src="/assets/images/osgirassois.png" alt="Carousel Img">
-            
-            <div>
-              <img src="/assets/images/nationalgallery.png" alt="Carousel Img">
+            <div class="museum-cards__icon">
+              <img src="/assets/images/galerianacionalicon.png" alt="Carousel Img">
             </div>
-            <div>
-              <h2>Galeria Nacional</h2>
-              <p>Localizado em Londres, no Reino Unido, sua história remonta ao início do século XIX, quando um médico e colecionador de arte chamado Sir George Beaumont propôs a criação de uma galeria nacional de arte para a Inglaterra, que para ele, seria uma forma importante de proporcionar educação e inspiração para o público em geral.</p>
+            <div class="museum-cards__content">
+              <h2 class="museum-cards__title">Galeria Nacional</h2>
+              <p class="museum-cards__text">Localizado em Londres, no Reino Unido, sua história remonta ao início do século XIX, quando um médico e colecionador de arte chamado Sir George Beaumont propôs a criação de uma galeria nacional de arte para a Inglaterra, que para ele, seria uma forma importante de proporcionar educação e inspiração para o público em geral.</p>
             </div>
-
           </article> 
 
-          <article>               
+          <article class="museum-cards__card">               
+            <img src="/assets/images/persistenciadamemoriabanner.png" alt="Carousel Img" class="museum-cards__img">
             
-            <img src="/assets/images/persistenciadamemoria.png" alt="Carousel Img">
-            
-            <div>
-              <img src="/assets/images/museudali.png" alt="Carousel Img">
+            <div class="museum-cards__icon">
+              <img src="/assets/images/museudaliicon.png" alt="Carousel Img">
             </div>
-            <div>
-              <h2>Teatro-Museu Dalí</h2>
-              <p>Nos anos 60, o prefeito de Figueres, cidade natal de Dalí, perguntou ao artista se podia doar uma de suas obras ao museu de Figueres, mas Dalí decidiu que sua cidade merecia muito mais que uma de suas obras, e que seria o lugar onde sua arte ficaria para sempre. Assim, começou o projeto de construir seu próprio museu.</p>
+            <div class="museum-cards__content">
+              <h2 class="museum-cards__title">Teatro-Museu Dalí</h2>
+              <p class="museum-cards__text">Nos anos 60, o prefeito de Figueres, cidade natal de Dalí, perguntou ao artista se podia doar uma de suas obras ao museu de Figueres, mas Dalí decidiu que sua cidade merecia muito mais que uma de suas obras, e que seria o lugar onde sua arte ficaria para sempre. Assim, começou o projeto de construir seu próprio museu.</p>
             </div>
-
           </article> 
 
-          <article>               
+          <article class="museum-cards__card">               
+            <img src="/assets/images/bannerosretirantes.webp" alt="Carousel Img" class="museum-cards__img">
             
-            <img src="/assets/images/osretirantes.png" alt="Carousel Img">
-            
-            <div>
-              <img src="/assets/images/museuartesaopaulo.png" alt="Carousel Img">
+            <div class="museum-cards__icon">
+              <img src="/assets/images/museuartesaopauloicon.png" alt="Carousel Img">
             </div>
-            <div>
-              <h2>Museu do Louvre</h2>
-              <p>É uma instituição privada e sem fins lucrativos, fundada, em 1947, pelo empresário brasileiro Assis Chateaubriand.  É considerado uma das mais importantes instituições culturais brasileiras e tem a missão de estabelecer, de maneira crítica e criativa, diálogos entre passado e presente, culturas e territórios, a partir das artes visuais.</p>
+            <div class="museum-cards__content">
+              <h2 class="museum-cards__title">Museu de Arte de São Paulo</h2>
+              <p class="museum-cards__text">É uma instituição privada e sem fins lucrativos, fundada, em 1947, pelo empresário brasileiro Assis Chateaubriand.  É considerado uma das mais importantes instituições culturais brasileiras e tem a missão de estabelecer, de maneira crítica e criativa, diálogos entre passado e presente, culturas e territórios, a partir das artes visuais.</p>
             </div>
-
           </article> 
 
-        </section>
-        
+         </section>
+        </div>
 
         <section>
           
@@ -233,18 +226,6 @@
 
         <footer>
           <h2>Projeto Arte</h2>
-        
-          <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
-
-          <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
-
-          <ul>
-            <li><a href="#">List One</a></li>
-            <li><a href="#">Page Two</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-          </ul>
         </footer>
     </body>
 </html>

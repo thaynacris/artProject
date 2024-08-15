@@ -1,27 +1,30 @@
 /*criar clase das duas fontes para depois aplicar*/
 
-body {
+body{
     margin: 0;
     line-height: 1.5;
+    font-family: font-family: "Poppins", sans-serif;
+    background-color: #ffffe0;
 }
 
-img {
+img{
     max-width: 100%;
 }
 
-.container {
+.container{
     margin-right: auto;
     margin-left: auto;
     padding-left: 1em;
     padding-right: 1em;
+    max-width: 1350px;
 }
 
-.header {
+.header{
     background: #fff;
     width: 100%;
 }
 
-.logo {
+.logo{
     text-transform: uppercase;
     background-color: #7f3e21;
     font-size: 24px;
@@ -29,30 +32,29 @@ img {
     padding: 20px;
     display: block;
     text-decoration: none;
-    color: #ffb48a;
-    font-weight: bold;
+    color: #bd754e;
     float: left;
 }
 
 .header__btn {}
 
-.header__nav {
+.header__nav{
     clear: left;
 }
 
-.header__nav ul {
+.header__nav ul{
     margin: 0;
     padding: 0;
 }
 
-.header__nav li {
+.header__nav li{
     list-style-type: none;
     background: #642919;
     text-align: center;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 }
 
-.header__nav a {
+.header__nav a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -63,11 +65,11 @@ img {
     transition: 0.4s ease;
 }
 
-.header__nav a:hover {
+.header__nav a:hover{
     color: #ffb48a;
 }
 
-.hero {
+.hero{
     height: 80vh;
     padding: 40px 20px;
     text-align: center;
@@ -80,7 +82,7 @@ img {
     background-size: 40px 40px, 40px 40px, cover;
 }
 
-.hero__title {
+.hero__title{
     background-color: rgba(255, 255, 255, 0.4);
     color: #001f3f;
     font-size: 28px;
@@ -88,9 +90,10 @@ img {
     padding: 5px 5px;
     display: inline-block;
     margin: 0 auto;
+    border-radius: 8px;
 }
 
-.hero__text {
+.hero__text{
     background-color: rgba(255, 255, 255, 0.4);
     color: #001f3f;
     padding: 2px 2px;
@@ -98,47 +101,226 @@ img {
     margin: 5px auto 35px;
     font-weight: bold;
     font-size: 16px;
+    border-radius: 5px;
 }
 
-.museum-cards {
+.museum-cards{
     margin-top: 2.5em;
 }
 
-.museum-cards__card {}
-
-.museum-cards__card:hover {
+.museum-cards__card:hover{
     outline: 3px solid #4a1410;
     outline-offset: -3px;
 }
 
 .museum-cards__card:hover .museum-cards__title, 
-.museum-cards__card:hover .museum-cards__text {
+.museum-cards__card:hover .museum-cards__text{
     color: #320000;
 }
 
-.museum-cards__img {
+.museum-cards__img{
     width: 100%;
 }
 
-.museum-cards__icon {
+.museum-cards__icon{
     margin: -55px auto;
-    width: 88px;
-    height: 88px;
+    width: 95px;
+    height: 95px;
 }
 
-.museum-cards__content {
+.museum-cards__content{
     padding: 40px 25px 10px;
     text-align: center;
-    border-left: 1px solid #642919;
 }
 
-.museum-cards__title {
+.museum-cards__title{
     font-size: 21px;
     color: #320000;
 }
 
-.museum-cards__text {
-    font-size: 14px;
+.museum-cards__text{
+    font-size: 17px;
     color: #642919;
+    text-align: justify;
 }
 
+.content{
+    background-color: #bd754e;
+    padding: 20px 0 20px;
+    font-family: "Shadows Into Light", normal;
+}
+
+.content h3{
+    color: #4a1410;
+    font-weight: 300 bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.content p{
+    color: #4a1410;
+    font-size: 18px;
+    word-spacing: 2px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.last-articles__thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+
+.last-articles__thumbs img{
+    display: block;
+    width: 100%;
+}
+.last-articles__thumbs a img {
+    transition: transform 0.2s ease, opacity 0.3s ease;
+  }
+
+  .last-articles__thumbs a img:hover {
+    transform: scale(1.1);
+  }
+
+.phrases-slider{
+    background-color: #bd754e;
+    padding: 10px 0 10px;
+    width: 100%;
+    overflow: auto;
+    font-family: "Grey Qo", cursive;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.slideshow{
+    white-space: nowrap;
+    
+}
+
+.slideshow p{
+    display: inline-block;
+    margin-right: 50px;
+    color: #320000;  
+    font-weight:500; 
+    
+}
+
+.slideshow p:last-child{
+    margin-right: 0;
+}
+
+.artmovements-container{
+    background-color: #9d5732;
+    padding: 30px 0;
+    border-bottom: 12px solid #7f3e21;
+}
+
+.artmovements-slideshow section{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.artmovements-slideshow h2{
+    color: #320000;
+    font-size: 22px;
+}
+
+.artmovements-slideshow p {
+    color: #4a1410;
+    font-size: 17px;
+}
+
+.artmovements-slideshow img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.center-p{
+    text-align: center;
+    margin-top: 10px
+}
+
+.footer{
+    color:#4a1410;
+    background-color:#bd754e;
+    font-size: 10px;
+    text-align: center;
+    padding: 2px 0 2px;
+    text-transform: uppercase;  
+}
+
+@media screen and (min-width:1080px) {
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo{
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+        .header__btn{
+            display: none;
+        }
+
+        .header__nav{
+            float: left;
+            width: 80%;
+            clear: none;
+            max-width: 100%;
+            background: #642919;
+            padding-bottom: 5px;
+        }
+
+        .header__nav ul{
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .header__nav li{
+            border-bottom: none;
+            flex-grow: 1; 
+        }
+
+        .hero {
+            margin-top: 75px;
+        }
+
+        .museum-cards{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .museum-cards__card{
+            border-left: 1px solid #7f3e21;
+        }
+
+        .content .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .last-articles__thumbs {
+            grid-template-columns: repeat(6, 1fr);
+
+        }
+
+
+
+
+
+
+
+
+    
+}

@@ -18,17 +18,15 @@ img{
     max-width: 100%;
 }
 
-.container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-    max-width: 1350px;
-}
-
 .header{
     background: #fff;
     width: 100%;
+}
+
+.js .header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo{
@@ -36,14 +34,13 @@ img{
     background-color: #7f3e21;
     font-size: 20px;
     margin: 0;
-    padding: 24px;
+    padding: 21.7px;
     display: block;
     text-decoration: none;
     color: #bd754e;
     float: left;
+    text-align: right;
 }
-
-.header__btn {}
 
 .header__nav{
     clear: left;
@@ -58,7 +55,7 @@ img{
     list-style-type: none;
     background: #642919;
     text-align: center;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    border-bottom: 1px dotted rgba(255,255,255, 0.2);
 }
 
 .header__nav a{
@@ -76,9 +73,105 @@ img{
     color: #ffb48a;
 }
 
+.header__btn{
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+.js .header__nav{
+    transition: max-height 1s;
+}
+
+.js .phrases-slider{
+    overflow: hidden;
+    color: #320000;
+}
+
+.js .phrases-slider .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+
+.js .phrases-slider p{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.js .phrases-slider p.show{
+    opacity: 1;
+    position: static;
+}
+
+.js .phrases-slider .prev, .js .phrases-slider .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.js .phrases-slider .prev{
+    left: 10px;
+}
+
+.js .phrases-slider .next{
+    right: 10px;
+}
+
+.js .artmovements-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+}
+
+.js .artmovements-slideshow section h2{
+    margin-top: 0;
+}
+.js .artmovements-slideshow section{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.js .artmovements-slideshow section.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .artmovements-slideshow .prev, .js .artmovements-slideshow .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .artmovements-slideshow .prev{
+    left: 10px;
+}
+.js .artmovements-slideshow .next{
+    right: 10px;
+}
+
 .hero{
     height: 80vh;
     padding: 40px 20px;
+    margin-bottom: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -95,7 +188,6 @@ img{
     font-size: 28px;
     font-weight: 600;
     padding: 5px 5px;
-    display: inline-block;
     margin: 0 auto;
     border-radius: 8px;
 }
@@ -104,13 +196,11 @@ img{
     background-color: rgba(255, 255, 255, 0.4);
     color: #001f3f;
     padding: 2px 2px;
-    display: inline-block;
     margin: 5px auto 35px;
     font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
 }
-
 
 .museum-cards__card a {
     text-decoration: none;
@@ -142,6 +232,7 @@ img{
 }
 
 .museum-cards__title{
+    text-align: center;
     font-size: 18px;
     color: #320000;
 }
@@ -155,7 +246,7 @@ img{
 
 .content{
     background-color: var(--primary-color);
-    padding: 20px 0 20px;
+    padding: 40px 60px 40px;
     font-family: var(--second-font);
     margin: 40px 0;
 }
@@ -186,13 +277,14 @@ img{
     display: block;
     width: 100%;
 }
+
 .last-articles__thumbs a img {
     transition: transform 0.2s ease, opacity 0.3s ease;
-  }
+}
 
-  .last-articles__thumbs a img:hover {
+.last-articles__thumbs a img:hover {
     transform: scale(1.1);
-  }
+}
 
 .phrases-slider{
     background-color: var(--primary-color);
@@ -263,6 +355,7 @@ img{
     text-transform: uppercase;  
 }
 
+
 .hero-michelangelo{
     height: 80vh;
     padding: 40px 20px;
@@ -278,7 +371,8 @@ img{
 
 .aboutothers{
     font-family: var(--primary-font);
-    padding: 50px 0;  
+    padding: 50px 40px;  
+    text-align: justify;
 }
 
 .aboutothers__title{
@@ -345,13 +439,9 @@ img{
 }
 
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width:1030px) {
         .header{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
+            position: fixed;    
         }
 
         .logo{
@@ -369,13 +459,11 @@ img{
             clear: none;
             max-width: 100%;
             background: #642919;
-            padding-bottom: 5px;
         }
 
         .header__nav ul{
             display: flex;
             justify-content: space-around;
-
         }
 
         .header__nav li{
@@ -383,8 +471,8 @@ img{
             flex-grow: 1; 
         }
 
-        .hero {
-            margin-top: 75px;
+        .hero{
+            margin-bottom: 70px;
         }
 
         .museum-cards {
@@ -398,14 +486,19 @@ img{
             border-left: 1px solid #7f3e21;
         }
 
-        .content .container{
+        .content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 30px;
+
         }
 
         .last-articles__thumbs {
             grid-template-columns: repeat(6, 1fr);
+        }
+
+        .aboutothers{
+            padding: 50px 100px; 
         }
 
         

@@ -1,3 +1,4 @@
+
 function Menu(config){
     this.nav = ( typeof config.container === 'string') ? 
     document.querySelector(config.container) : config.container
@@ -11,6 +12,7 @@ function Menu(config){
     var _this = this;
     
     this.btn.removeAttribute('style')
+    //closeMenu()
     
     if(this.maxWidth){
         window.addEventListener('resize', e => {
@@ -68,3 +70,7 @@ function Menu(config){
     }
     
 }
+
+
+
+

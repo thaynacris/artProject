@@ -5,9 +5,9 @@ function Carousel(config){
     this.itens = (typeof config.itens === 'string') ? 
     this.container.querySelectorAll(config.itens) : config.itens
     
-    this.btnPrev = (typeof config.btnPrev === 'string') ? this.container.querySelector(config.btnPrev) : config.btnPrev
+    this.btnPrev = (typeof config.btnPrev === 'string') ? this.container.querySelector(config.btnPrev) : config.btnPrev;
     
-    this.btnNext = (typeof config.btnNext === 'string') ? this.container.querySelector(config.btnNext) : config.btnNext
+    this.btnNext = (typeof config.btnNext === 'string') ? this.container.querySelector(config.btnNext) : config.btnNext;
     
     var _this = this;
     var _currentSlide = 0
@@ -33,13 +33,17 @@ function Carousel(config){
     }
     
     function showNextSlide(){
-        _currentSlide++;
-        showSlide()
+        if (_currentSlide < _this.itens.length - 1) {
+            _currentSlide++;
+            showSlide();
+        }
     }
     
     function showPrevSlide(){
-        _currentSlide--;
-        showSlide()
+        if (_currentSlide > 0) {
+            _currentSlide--;
+            showSlide();
+        }
     }
     
     function showSlide(){
@@ -53,3 +57,4 @@ function Carousel(config){
     }
     
 }
+

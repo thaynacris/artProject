@@ -1,4 +1,4 @@
-# Calculadora de IMC 
+# Projeto Arte 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/thaynacris/artproject/blob/main/LICENSE) 
 
 # Sobre o projeto

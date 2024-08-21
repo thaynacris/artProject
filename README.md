@@ -25,7 +25,7 @@ A arte tem o poder de eternizar a história, permitindo que nos conectemos com o
 
 ```bash
 # clonar repositório
-git clone https://github.com/thaynacris/imc](https://github.com/thaynacris/artproject.git
+git clone https://github.com/thaynacris/artproject.git
 
 # entrar na pasta do projeto
 cd artproject

@@ -1,0 +1,396 @@
+:root {
+    --background-color: #ecdbb9;
+    --primary-color: #bd754e;
+    --second-color: #9d5732;
+    --primary-font: "Libre Baskerville", serif;
+    --second-font: "Shadows Into Light", normal;
+    --phrase-font: "Grey Qo", cursive;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    background: #642919; //
+    width: 100%;
+}
+
+.js .header {
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    text-transform: uppercase;
+    background-color: #7f3e21;
+    font-size: 20px;
+    margin: 0;
+    padding: 21.7px;
+    display: block;
+    text-decoration: none;
+    color: #bd754e;
+    float: left;
+    text-align: right;
+}
+
+.header__nav {
+    clear: left;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav li {
+    list-style-type: none;
+    background: #642919;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+.header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #9d5732;
+    display: block;
+    padding: 27px 0;
+    transition: 0.4s ease;
+}
+
+.header__nav a:hover {
+    color: #ffb48a;
+}
+
+.header__btn {
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+.js .header__nav {
+    transition: max-height 1s;
+}
+
+.hero {
+    height: 80vh;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--background-color) 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        linear-gradient(-45deg, var(--background-color) 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+        url(../assets/images/noiteestrelada.png);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero__title {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #001f3f;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 5px 5px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.hero__text {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #001f3f;
+    padding: 2px 2px;
+    margin: 5px auto 35px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.museum-cards__card a {
+    text-decoration: none;
+}
+
+.museum-cards__card:hover {
+    outline: 3px solid #4a1410;
+    outline-offset: -3px;
+}
+
+.museum-cards__card:hover .museum-cards__title,
+.museum-cards__card:hover .museum-cards__text {
+    color: #320000;
+}
+
+.museum-cards__img {
+    width: 100%;
+}
+
+.museum-cards__icon {
+    margin: -55px auto;
+    width: 95px;
+    height: 95px;
+}
+
+.museum-cards__content {
+    padding: 40px 25px 10px;
+    text-align: center;
+}
+
+.museum-cards__title {
+    text-align: center;
+    font-size: 18px;
+    color: #320000;
+}
+
+.museum-cards__text {
+    font-size: 15px;
+    color: #642919;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.content {
+    background-color: var(--primary-color);
+    padding: 40px 60px 40px;
+    font-family: var(--second-font);
+    margin: 40px 0;
+}
+
+.content h3 {
+    color: #4a1410;
+    font-weight: 300 bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.content p {
+    color: #4a1410;
+    font-size: 18px;
+    word-spacing: 2px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.last-articles__thumbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+
+.last-articles__thumbs img {
+    display: block;
+    width: 100%;
+}
+
+.last-articles__thumbs a img {
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.last-articles__thumbs a img:hover {
+    transform: scale(1.1);
+}
+
+.phrases-slider {
+    background-color: var(--primary-color);
+    padding: 10px 0 10px;
+    width: 100%;
+    font-family: var(--phrase-font);
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.artmovements-container {
+    background-color: var(--second-color);
+    padding: 40px 60px 40px;
+    border-bottom: 12px solid #7f3e21;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+
+.artmovements-content h2 {
+    color: #320000;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.artmovements-content p{
+    font-size: 15px;
+    color: #4a1410;
+}
+
+.footer {
+    color: #4a1410;
+    background-color: var(--primary-color);
+    font-size: 9px;
+    text-align: center;
+    padding: 2px 0 2px;
+    text-transform: uppercase;
+}
+
+
+.hero-michelangelo {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--background-color) 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        linear-gradient(-45deg, var(--background-color) 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+        url(../assets/images/bannermichelangelo.png);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.aboutothers {
+    font-family: var(--primary-font);
+    padding: 50px 40px;
+    text-align: justify;
+}
+
+.aboutothers__title {
+    color: #320000;
+    font-size: 24px;
+    text-align: center;
+}
+
+.aboutothers p {
+    font-size: 15px;
+    color: #642919;
+}
+
+.hero-portinari {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--background-color) 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        linear-gradient(-45deg, var(--background-color) 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+        url(../assets/images/bannerportinari.png);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero-davinci {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--background-color) 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        linear-gradient(-45deg, var(--background-color) 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+        url(../assets/images/bannerleodavinci.jpg);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero-dali {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--background-color) 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        linear-gradient(-45deg, var(--background-color) 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+        url(../assets/images/bannerdali.webp);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+.hero-vangogh {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--background-color) 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        linear-gradient(-45deg, var(--background-color) 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+        url(../assets/images/noiteestrelada.png);
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+
+@media screen and (min-width:1030px) {
+
+    .header {
+        position: sticky;
+    }
+
+    .logo {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__nav {
+        float: left;
+        width: 80%;
+        clear: none;
+        max-width: 100%;
+        background: #642919;
+    }
+
+    .header__nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header__nav li {
+        border-bottom: none;
+        flex-grow: 1;
+    }
+
+    .museum-cards {
+        margin-top: 2.5em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+
+    .museum-cards__card {
+        border-left: 1px solid #7f3e21;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+
+    }
+
+    .last-articles__thumbs {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .artmovements-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .aboutothers {
+        padding: 50px 100px;
+    }
+
+}

@@ -24,7 +24,7 @@ img {
 }
 
 .js .header {
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 10;
 }
@@ -83,95 +83,6 @@ img {
 
 .js .header__nav {
     transition: max-height 1s;
-}
-
-.js .phrases-slider {
-    overflow: hidden;
-    color: #320000;
-}
-
-.js .phrases-slider .slideshow {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    max-width: 950px;
-}
-
-.js .phrases-slider figure {
-    opacity: 0;
-    transition: 1s opacity;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.js .phrases-slider figure.show {
-    opacity: 1;
-    position: absolute;
-}
-
-.js .phrases-slider .prev,
-.js .phrases-slider .next {
-    z-index: 3;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-}
-
-.js .phrases-slider .prev {
-    left: 10px;
-}
-
-.js .phrases-slider .next {
-    right: 10px;
-}
-
-.js .artmovements-slideshow {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    max-width: 950px;
-    box-sizing: border-box;
-    padding: 0 50px;
-    color: white;
-}
-
-.js .artmovements-slideshow figure h2 {
-    margin-top: 0;
-}
-
-.js .artmovements-slideshow figure {
-    opacity: 0;
-    transition: 1s opacity;
-    position: absolute;
-    top: 0;
-    left: 50px;
-    right: 50px;
-    box-sizing: border-box;
-    margin: 0;
-}
-
-.js .artmovements-slideshow section.show {
-    opacity: 1;
-    position: static;
-
-}
-
-.artmovements-container .prev-artmovements,
-.artmovements-container .next-artmovements {
-    z-index: 3;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-}
-
-.js .artmovements-slideshow .prev-artmovements {
-    left: 10px;
-}
-
-.js .artmovements-slideshow .next-artmovements {
-    right: 10px;
 }
 
 .hero {
@@ -296,51 +207,33 @@ img {
     background-color: var(--primary-color);
     padding: 10px 0 10px;
     width: 100%;
-    overflow: auto;
     font-family: var(--phrase-font);
     font-size: 28px;
-    font-weight: 900;
-    margin: 20px 0;
-}
-
-.slideshow {
-    white-space: nowrap;
-
-}
-
-.slideshow figure {
-    display: inline-block;
-    margin-right: 50px;
-    color: #320000;
     font-weight: 500;
-
+    margin: 20px 0;
+    text-align: center;
 }
-
 
 .artmovements-container {
     background-color: var(--second-color);
-    padding: 30px 0;
+    padding: 40px 60px 40px;
     border-bottom: 12px solid #7f3e21;
+    font-family: var(--primary-font);
+    text-align: center;
 }
 
 
-.artmovements-slideshow h2 {
+.artmovements-content h2 {
     color: #320000;
-    font-size: 19px;
+    font-size: 20px;
     font-style: italic;
     font-weight: normal;
 }
 
-.artmovements-slideshow figcaption {
-    color: #4a1410;
+.artmovements-content p{
     font-size: 15px;
-    text-align: center;
+    color: #4a1410;
 }
-
-.artmovements-slideshow figure+figure {
-    margin-top: 5em;
-}
-
 
 .footer {
     color: #4a1410;
@@ -404,7 +297,7 @@ img {
     justify-content: center;
     background: linear-gradient(45deg, var(--background-color) 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
         linear-gradient(-45deg, var(--background-color) 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
-        url(../assets/images/bannerdavinci.webp);
+        url(../assets/images/bannerleodavinci.jpg);
     background-size: 40px 40px, 40px 40px, cover;
 }
 
@@ -438,7 +331,7 @@ img {
 @media screen and (min-width:1030px) {
 
     .header {
-        position: fixed;
+        position: sticky;
     }
 
     .logo {
@@ -488,6 +381,12 @@ img {
 
     .last-articles__thumbs {
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .artmovements-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
     }
 
     .aboutothers {

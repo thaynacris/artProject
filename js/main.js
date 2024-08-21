@@ -11,17 +11,4 @@
         widthEnabled: 1024 
     })
     
-    var carouselPhrases = new Carousel({
-        container: '.phrases-slider .slideshow',
-        itens: 'figure',
-        btnPrev: '.prev',
-        btnNext: '.next'
-    })
-    
-    var carouselArtmovements = new Carousel({
-        container: '.artmovements-slideshow',
-        itens: 'figure',
-        btnPrev: '.prev-artmovements',
-        btnNext: '.next-artmovements'
-    })
 })()
